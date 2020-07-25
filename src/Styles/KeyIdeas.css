@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap");
+.KeyIdeas {
+  max-width: 1680px;
+  padding: 128px 245px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  transition: padding 1s;
+}
+.KeyIdeas_header {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 50px;
+  line-height: 54px;
+  color: #111212;
+  margin-bottom: 101px;
+}
+.KeyIdeas_posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.KeyIdeas_preloader {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1679px) {
+  .KeyIdeas {
+    padding: 128px 108px;
+  }
+}
+@media screen and (max-width: 1295px) {
+  .KeyIdeas {
+    padding: 128px 60px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .KeyIdeas {
+    padding: 112px 60px;
+  }
+  .KeyIdeas_header {
+    margin-bottom: 81px;
+  }
+  .KeyIdeas_posts {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 675px) {
+  .KeyIdeas {
+    padding: 120px 24px;
+  }
+  .KeyIdeas_header {
+    margin-bottom: 70px;
+  }
+}
+
+/*# sourceMappingURL=KeyIdeas.css.map */

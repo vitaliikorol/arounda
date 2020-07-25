@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+.Post {
+  width: 397px;
+  height: 490px;
+  padding: 64px 55px 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: color 0.5s, background-color 0.5s, padding 1s;
+}
+.Post_title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 28px;
+  line-height: 44px;
+  text-transform: capitalize;
+  margin: 0;
+  color: #111212;
+}
+.Post_body {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: #313233;
+}
+.Post_body:first-letter {
+  text-transform: capitalize;
+}
+.Post_footer {
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: 0.6px;
+  color: #C3CACB;
+}
+.Post:hover {
+  background-color: #4562C9;
+  cursor: url("../Images/cursor1.png"), pointer;
+}
+
+@media screen and (max-width: 1679px) {
+  .Post {
+    padding: 64px 44px 37px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Post {
+    height: auto;
+    width: 672px;
+    box-sizing: border-box;
+    padding: 40px 64px 60px;
+  }
+  .Post_title {
+    padding: 24px 0 18px;
+  }
+}
+@media screen and (max-width: 675px) {
+  .Post {
+    width: 100vw;
+    padding: 40px 24px 60px;
+  }
+}
+
+/*# sourceMappingURL=Post.css.map */
