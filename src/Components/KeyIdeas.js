@@ -6,7 +6,7 @@ import Post from "./Post";
 
 const KeyIdeas = () => {
     const [post, setPost] = useState([]);
-    const [alert, setAlert] = useState('Posts are loading from server')
+    const [alert, setAlert] = useState('Downloading posts')
     const posts = useContext(PostFromServer)
 
 
@@ -14,8 +14,7 @@ const KeyIdeas = () => {
         let startIndex = Math.ceil(Math.random() * 97);
         console.log(startIndex)
         setTimeout(() => {
-            posts.then(data => data.slice(startIndex, startIndex + 3))
-                .then(data => setPost(data))
+            posts.then(data => data.slice(startIndex, startIndex + 3)).then(data => setPost(data))
             setAlert('No posts yet')
         }, 3000)
     }, [posts])
@@ -25,7 +24,15 @@ const KeyIdeas = () => {
             {post.length === 0 ? (
                 <div className="KeyIdeas_preloader">
                     <p>{alert}</p>
-                    <LoadingSpinner/>
+                    <div
+                        style={{
+                        display: `${alert === 'No posts yet'
+                            ? 'none'
+                            : 'initial'}`
+                    }}
+                    >
+                        <LoadingSpinner/>
+                    </div>
                 </div>
             ) : (
                 <>
