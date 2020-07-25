@@ -1,5 +1,6 @@
 {
   "name": "arounda",
+  "homepage": "http://vitaliikorol.github.io/arounda",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
