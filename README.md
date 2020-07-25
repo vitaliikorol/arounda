@@ -1,10 +1,10 @@
 [DEMO LINK](https://vitaliikorol.github.io/arounda/)
 
--Section creacted w/ React.JS 
--Resizable design - implemented
--On tablets mode Post's id reverts from bottom to top position
--Api have been connected and used for data ejecting
--Each page's refresh gives us randomly 3 unique posts
+-Section creacted w/ React.JS /n
+-Resizable design - implemented /n
+-On tablets mode Post's id reverts from bottom to top position /n
+-Api have been connected and used for data ejecting /n
+-Each page's refresh gives us randomly 3 unique posts /n
 
 
 
