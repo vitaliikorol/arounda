@@ -6,7 +6,7 @@ import Post from "./Post";
 
 const KeyIdeas = () => {
     const [post, setPost] = useState([]);
-    const [alert, setAlert] = useState('Downloading posts')
+    const [alert, setAlert] = useState(false)
     const posts = useContext(PostFromServer)
 
 
@@ -15,7 +15,7 @@ const KeyIdeas = () => {
         console.log(startIndex)
         setTimeout(() => {
             posts.then(data => data.slice(startIndex, startIndex + 3)).then(data => setPost(data))
-            setAlert('No posts yet')
+            setAlert(true)
         }, 3000)
     }, [posts])
 
@@ -23,10 +23,16 @@ const KeyIdeas = () => {
         <main className="KeyIdeas">
             {post.length === 0 ? (
                 <div className="KeyIdeas_preloader">
-                    <p>{alert}</p>
+                    <p style={{
+                        display: `${alert 
+                            ? 'initial'
+                            : 'none'}`
+                    }}>
+                        {alert}
+                    </p>
                     <div
                         style={{
-                        display: `${alert === 'No posts yet'
+                        display: `${alert
                             ? 'none'
                             : 'initial'}`
                     }}
