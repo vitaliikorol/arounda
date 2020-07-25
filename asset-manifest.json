@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/arounda/static/css/main.6b4ce1e2.chunk.css",
+    "main.js": "/arounda/static/js/main.7ec047fd.chunk.js",
+    "main.js.map": "/arounda/static/js/main.7ec047fd.chunk.js.map",
+    "runtime-main.js": "/arounda/static/js/runtime-main.1eb9199d.js",
+    "runtime-main.js.map": "/arounda/static/js/runtime-main.1eb9199d.js.map",
+    "static/js/2.8485cec0.chunk.js": "/arounda/static/js/2.8485cec0.chunk.js",
+    "static/js/2.8485cec0.chunk.js.map": "/arounda/static/js/2.8485cec0.chunk.js.map",
+    "index.html": "/arounda/index.html",
+    "precache-manifest.fa7efddab67e16763aa42091a9c156af.js": "/arounda/precache-manifest.fa7efddab67e16763aa42091a9c156af.js",
+    "service-worker.js": "/arounda/service-worker.js",
+    "static/css/main.6b4ce1e2.chunk.css.map": "/arounda/static/css/main.6b4ce1e2.chunk.css.map",
+    "static/js/2.8485cec0.chunk.js.LICENSE.txt": "/arounda/static/js/2.8485cec0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1eb9199d.js",
+    "static/js/2.8485cec0.chunk.js",
+    "static/css/main.6b4ce1e2.chunk.css",
+    "static/js/main.7ec047fd.chunk.js"
+  ]
+}
